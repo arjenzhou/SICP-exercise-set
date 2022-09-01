@@ -1,7 +1,7 @@
 (define (sqrt-iterator guess x)
 	(if (good-enough? guess x) 
 		guess 
-	    (sqrt-iterator (improve guess x) x)))
+		(sqrt-iterator (improve guess x) x)))
 
 (define (good-enough? guess x)
 	(< (abs (- (square guess) x)) 0.001))
