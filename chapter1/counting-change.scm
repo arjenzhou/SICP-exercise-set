@@ -5,7 +5,7 @@
 ; latter **number** is equal to the number of ways to make change for the amount that remains *after* using a coin of the first kind
 
 
-; takes number of kinds of coins available as input, returns the denomination of the first kind. in desc order
+; takes number of kinds of coins available as input, returns the denomination of the first kind. in decreasing order
 (define (first-denomination kinds-of-coins)
 	(cond ((= kinds-of-coins 1) 1)
 		((= kinds-of-coins 2) 5)
